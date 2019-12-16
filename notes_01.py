@@ -1,5 +1,6 @@
-print(int('b',16), int('62ba1cd8a',16)) # Prints the hexadecimal representation of the value.
 '''
+print(int('b',16), int('62ba1cd8a',16)) # Prints the hexadecimal representation of the value.
+/
 testnet : A small replica of bitcoin for developers to test their app without real money.
 We use bitcoin-cli command to communicate with a node. It is a command line utility.
 In this course we use >testnet rather than >bitcoin-cli.
@@ -56,5 +57,4 @@ from helpers import testnet
 from pprint import pprint
 
 pprint(testnet.getblockchaininfo())
-
 '''
