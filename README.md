@@ -1,2 +1,2 @@
 # mooniversity_examples
-Example Codes in the Mooniversity by Justin Moon
+Example Bitcoin Codes in Python of the Mooniversity Course by Justin Moon
