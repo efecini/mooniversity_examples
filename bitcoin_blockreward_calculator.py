@@ -3,12 +3,12 @@ from decimal import Decimal
 
 def calculate_bitcoin_cycle_and_block_reward():
     #This little program tells you the bitcoin's cycle count and the bitcoin block reward amount
-    initial_subsidy = Decimal(50)
-    blocks_per_halvening = 210000
+    INITIAL_SUBSIDY = Decimal(50)
+    BLOCKS_PER_HALVENING = 210000
     last_block = mainnet.getblockchaininfo()["blocks"]
-    cycle_count = int(last_block/blocks_per_halvening)
-    initial_subsidy /= cycle_count*2
-    return {"Cycle":cycle_count+1, "Block_reward":initial_subsidy}
+    cycle_count = int(last_block/BLOCKS_PER_HALVENING)
+    block_reward = INITIAL_SUBSIDY / cycle_count*2
+    return {"Cycle":cycle_count+1, "Block_reward":block_reward}
 
 if __name__ == "__main__":
     cycle = calculate_bitcoin_cycle_and_block_reward()
