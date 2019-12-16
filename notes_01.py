@@ -56,5 +56,4 @@ from helpers import testnet
 from pprint import pprint
 
 pprint(testnet.getblockchaininfo())
-
 '''
