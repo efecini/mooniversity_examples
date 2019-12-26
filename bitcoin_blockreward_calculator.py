@@ -2,7 +2,7 @@ from helpers import mainnet
 from decimal import Decimal
 
 def calculate_bitcoin_cycle_and_block_reward():
-    #This little program tells you the bitcoin's cycle count and the bitcoin block reward amount
+    #This little program gives the bitcoin's cycle count and the bitcoin block reward amount
     INITIAL_SUBSIDY = Decimal(50)
     BLOCKS_PER_HALVENING = 210000
     last_block = mainnet.getblockchaininfo()["blocks"]
